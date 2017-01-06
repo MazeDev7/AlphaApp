@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         print("This is a test for git")
+        print("Another test")
     }
 
     override func didReceiveMemoryWarning() {
