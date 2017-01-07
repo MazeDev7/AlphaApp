@@ -417,6 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Me.Temperature-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -429,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Me.Temperature-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -505,6 +507,7 @@
 				419E08BE1E203DEC004C502E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419E08BF1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature ConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +516,7 @@
 				419E08C11E203DEC004C502E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		419E08C21E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature ConverterUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +525,7 @@
 				419E08C41E203DEC004C502E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
