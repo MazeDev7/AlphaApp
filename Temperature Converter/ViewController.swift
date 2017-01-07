@@ -1,9 +1,8 @@
 //
 //  ViewController.swift
-//  Temperature Converter
 //
-//  Created by Ali Mazeh on 1/6/17.
-//  Copyright © 2017 Ali Mazeh. All rights reserved.
+//  Created by Ali Mazeh & Husein Dakroub on 1/6/17.
+//  Copyright © 2017 Ali Mazeh & Husein Dakroub. All rights reserved.
 //
 
 import UIKit
@@ -14,10 +13,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        print("This is a test for git")
-        print("Another test")
-        print("This is husein")
-        print("This is tom")
     }
 
     override func didReceiveMemoryWarning() {
