@@ -34,8 +34,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func oneTapped(_ sender: Any) {
+        // get current value in text box
         textBox.text = textBoxValue
+        // append the number 1 to the end of it
         textBoxValue += "1"
+        // set the text box to the new value
         textBox.text = textBoxValue
     }
 
