@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textBox: UITextField!
-    
+    var textBoxValue = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,33 +30,61 @@ class ViewController: UIViewController {
     }
     
     @IBAction func zeroTapped(_ sender: Any) {
+        
     }
     
     @IBAction func oneTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "1"
+        textBox.text = textBoxValue
     }
 
     @IBAction func twoTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "2"
+        textBox.text = textBoxValue
     }
     
     @IBAction func threeTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "3"
+        textBox.text = textBoxValue
     }
     
     @IBAction func fourTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "4"
+        textBox.text = textBoxValue
     }
     
     @IBAction func fiveTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "5"
+        textBox.text = textBoxValue
     }
     
     @IBAction func sixTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "6"
+        textBox.text = textBoxValue
     }
     
     @IBAction func sevenTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "7"
+        textBox.text = textBoxValue
     }
     
     @IBAction func eightTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "8"
+        textBox.text = textBoxValue
     }
     
     @IBAction func nineTapped(_ sender: Any) {
+        textBox.text = textBoxValue
+        textBoxValue += "9"
+        textBox.text = textBoxValue
     }
     
     @IBAction func negButtonTapped(_ sender: Any) {
