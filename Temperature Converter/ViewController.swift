@@ -37,16 +37,19 @@ extension String {
 }
 
 class ViewController: UIViewController {
+    var textBoxValue = ""
+    var zeroCheck = ""
+    var isDecimal = false
+    var firstValue:Int64 = 0
+    var secondValue:Int64 = 0
     
 
     @IBOutlet weak var textBox: UITextField!
-    var textBoxValue = ""
-    var zeroCheck = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        textBox.text = "0"
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,11 +61,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clearButtonTapped(_ sender: Any) {
+        textBox.text = "0"
+        textBoxValue = "0"
+        isDecimal = false
     }
     
     @IBAction func zeroTapped(_ sender: Any) {
         // get current value in text box
-        textBox.text = textBoxValue;
+        textBoxValue = self.textBox.text!
         // check to not allow multiple leading zeros
         if textBoxValue != "0" {
             // append the number one to the end of it
@@ -70,35 +76,39 @@ class ViewController: UIViewController {
             // set text box to new value
             textBox.text = textBoxValue
         }
-        
     }
     
     @IBAction func oneTapped(_ sender: Any) {
-        // get current value in text box
-        textBox.text = textBoxValue
-        // append the number 1 to the end of it
+        
+        textBoxValue = self.textBox.text!
+        zeroCheck = textBoxValue[0]
+        
+        if zeroCheck == "0" && isDecimal == false {
+            textBoxValue.removeAll()
+        }
+        
         textBoxValue += "1"
-        // set the text box to the new value
         textBox.text = textBoxValue
     }
 
     @IBAction func twoTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
         textBoxValue += "2"
         textBox.text = textBoxValue
+        textBoxValue = ""
     }
     
     @IBAction func threeTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -107,10 +117,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fourTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -119,10 +129,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fiveTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -131,10 +141,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sixTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -143,10 +153,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sevenTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -155,10 +165,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func eightTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -167,10 +177,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nineTapped(_ sender: Any) {
-        textBox.text = textBoxValue
+        textBoxValue = self.textBox.text!
         zeroCheck = textBoxValue[0]
         
-        if zeroCheck == "0" {
+        if zeroCheck == "0" && isDecimal == false {
             textBoxValue.removeAll()
         }
         
@@ -182,6 +192,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func decimalButtonTapped(_ sender: Any) {
+        textBoxValue = self.textBox.text!
+        
+        if isDecimal == false {
+            textBoxValue += "."
+        }
+        
+        textBox.text = textBoxValue
+        isDecimal = true
+        
     }
     
     @IBAction func percentButtonPressed(_ sender: Any) {
