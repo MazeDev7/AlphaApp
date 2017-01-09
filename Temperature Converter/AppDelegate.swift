@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Temperature Converter
 //
-//  Created by Ali Mazeh on 1/6/17.
-//  Copyright © 2017 Ali Mazeh. All rights reserved.
+//  Created by Ali Mazeh & Husein Dakroub on 1/6/17.
+//  Copyright © 2017 Ali Mazeh & Husein Dakroub. All rights reserved.
 //
 
 import UIKit
