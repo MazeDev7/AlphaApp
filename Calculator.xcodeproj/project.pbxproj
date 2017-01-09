@@ -12,8 +12,6 @@
 		419E089D1E203DEC004C502E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419E089B1E203DEC004C502E /* Main.storyboard */; };
 		419E089F1E203DEC004C502E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 419E089E1E203DEC004C502E /* Assets.xcassets */; };
 		419E08A21E203DEC004C502E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 419E08A01E203DEC004C502E /* LaunchScreen.storyboard */; };
-		419E08AD1E203DEC004C502E /* Temperature_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E08AC1E203DEC004C502E /* Temperature_ConverterTests.swift */; };
-		419E08B81E203DEC004C502E /* Temperature_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E08B71E203DEC004C502E /* Temperature_ConverterUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		419E08941E203DEC004C502E /* Temperature Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Temperature Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		419E08941E203DEC004C502E /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		419E08971E203DEC004C502E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		419E08991E203DEC004C502E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		419E089C1E203DEC004C502E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		419E089E1E203DEC004C502E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		419E08A11E203DEC004C502E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		419E08A31E203DEC004C502E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419E08A81E203DEC004C502E /* Temperature ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Temperature ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		419E08AC1E203DEC004C502E /* Temperature_ConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature_ConverterTests.swift; sourceTree = "<group>"; };
-		419E08AE1E203DEC004C502E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		419E08B31E203DEC004C502E /* Temperature ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Temperature ConverterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		419E08B71E203DEC004C502E /* Temperature_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature_ConverterUITests.swift; sourceTree = "<group>"; };
-		419E08B91E203DEC004C502E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		419E08A81E203DEC004C502E /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		419E08B31E203DEC004C502E /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +71,7 @@
 		419E088B1E203DEC004C502E = {
 			isa = PBXGroup;
 			children = (
-				419E08961E203DEC004C502E /* Temperature Converter */,
-				419E08AB1E203DEC004C502E /* Temperature ConverterTests */,
-				419E08B61E203DEC004C502E /* Temperature ConverterUITests */,
+				419E08961E203DEC004C502E /* Calculator */,
 				419E08951E203DEC004C502E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,14 +79,14 @@
 		419E08951E203DEC004C502E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				419E08941E203DEC004C502E /* Temperature Converter.app */,
-				419E08A81E203DEC004C502E /* Temperature ConverterTests.xctest */,
-				419E08B31E203DEC004C502E /* Temperature ConverterUITests.xctest */,
+				419E08941E203DEC004C502E /* Calculator.app */,
+				419E08A81E203DEC004C502E /* CalculatorTests.xctest */,
+				419E08B31E203DEC004C502E /* CalculatorUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		419E08961E203DEC004C502E /* Temperature Converter */ = {
+		419E08961E203DEC004C502E /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				419E08971E203DEC004C502E /* AppDelegate.swift */,
@@ -104,33 +96,16 @@
 				419E08A01E203DEC004C502E /* LaunchScreen.storyboard */,
 				419E08A31E203DEC004C502E /* Info.plist */,
 			);
+			name = Calculator;
 			path = "Temperature Converter";
-			sourceTree = "<group>";
-		};
-		419E08AB1E203DEC004C502E /* Temperature ConverterTests */ = {
-			isa = PBXGroup;
-			children = (
-				419E08AC1E203DEC004C502E /* Temperature_ConverterTests.swift */,
-				419E08AE1E203DEC004C502E /* Info.plist */,
-			);
-			path = "Temperature ConverterTests";
-			sourceTree = "<group>";
-		};
-		419E08B61E203DEC004C502E /* Temperature ConverterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				419E08B71E203DEC004C502E /* Temperature_ConverterUITests.swift */,
-				419E08B91E203DEC004C502E /* Info.plist */,
-			);
-			path = "Temperature ConverterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		419E08931E203DEC004C502E /* Temperature Converter */ = {
+		419E08931E203DEC004C502E /* Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419E08BC1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature Converter" */;
+			buildConfigurationList = 419E08BC1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
 				419E08901E203DEC004C502E /* Sources */,
 				419E08911E203DEC004C502E /* Frameworks */,
@@ -140,14 +115,14 @@
 			);
 			dependencies = (
 			);
-			name = "Temperature Converter";
+			name = Calculator;
 			productName = "Temperature Converter";
-			productReference = 419E08941E203DEC004C502E /* Temperature Converter.app */;
+			productReference = 419E08941E203DEC004C502E /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		419E08A71E203DEC004C502E /* Temperature ConverterTests */ = {
+		419E08A71E203DEC004C502E /* CalculatorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419E08BF1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature ConverterTests" */;
+			buildConfigurationList = 419E08BF1E203DEC004C502E /* Build configuration list for PBXNativeTarget "CalculatorTests" */;
 			buildPhases = (
 				419E08A41E203DEC004C502E /* Sources */,
 				419E08A51E203DEC004C502E /* Frameworks */,
@@ -158,14 +133,14 @@
 			dependencies = (
 				419E08AA1E203DEC004C502E /* PBXTargetDependency */,
 			);
-			name = "Temperature ConverterTests";
+			name = CalculatorTests;
 			productName = "Temperature ConverterTests";
-			productReference = 419E08A81E203DEC004C502E /* Temperature ConverterTests.xctest */;
+			productReference = 419E08A81E203DEC004C502E /* CalculatorTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		419E08B21E203DEC004C502E /* Temperature ConverterUITests */ = {
+		419E08B21E203DEC004C502E /* CalculatorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 419E08C21E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature ConverterUITests" */;
+			buildConfigurationList = 419E08C21E203DEC004C502E /* Build configuration list for PBXNativeTarget "CalculatorUITests" */;
 			buildPhases = (
 				419E08AF1E203DEC004C502E /* Sources */,
 				419E08B01E203DEC004C502E /* Frameworks */,
@@ -176,9 +151,9 @@
 			dependencies = (
 				419E08B51E203DEC004C502E /* PBXTargetDependency */,
 			);
-			name = "Temperature ConverterUITests";
+			name = CalculatorUITests;
 			productName = "Temperature ConverterUITests";
-			productReference = 419E08B31E203DEC004C502E /* Temperature ConverterUITests.xctest */;
+			productReference = 419E08B31E203DEC004C502E /* CalculatorUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +164,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Ali Mazeh";
+				ORGANIZATIONNAME = "HussDoc & Ali Mazeh";
 				TargetAttributes = {
 					419E08931E203DEC004C502E = {
 						CreatedOnToolsVersion = 8.2;
@@ -207,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 419E088F1E203DEC004C502E /* Build configuration list for PBXProject "Temperature Converter" */;
+			buildConfigurationList = 419E088F1E203DEC004C502E /* Build configuration list for PBXProject "Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +195,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				419E08931E203DEC004C502E /* Temperature Converter */,
-				419E08A71E203DEC004C502E /* Temperature ConverterTests */,
-				419E08B21E203DEC004C502E /* Temperature ConverterUITests */,
+				419E08931E203DEC004C502E /* Calculator */,
+				419E08A71E203DEC004C502E /* CalculatorTests */,
+				419E08B21E203DEC004C502E /* CalculatorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419E08AD1E203DEC004C502E /* Temperature_ConverterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				419E08B81E203DEC004C502E /* Temperature_ConverterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		419E08AA1E203DEC004C502E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 419E08931E203DEC004C502E /* Temperature Converter */;
+			target = 419E08931E203DEC004C502E /* Calculator */;
 			targetProxy = 419E08A91E203DEC004C502E /* PBXContainerItemProxy */;
 		};
 		419E08B51E203DEC004C502E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 419E08931E203DEC004C502E /* Temperature Converter */;
+			target = 419E08931E203DEC004C502E /* Calculator */;
 			targetProxy = 419E08B41E203DEC004C502E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Temperature Converter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Me.Temperature-Converter";
+				PRODUCT_BUNDLE_IDENTIFIER = Me.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -427,7 +400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Temperature Converter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Me.Temperature-Converter";
+				PRODUCT_BUNDLE_IDENTIFIER = Me.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -444,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Me.Temperature-ConverterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temperature Converter.app/Temperature Converter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Debug;
 		};
@@ -458,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Me.Temperature-ConverterTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temperature Converter.app/Temperature Converter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
 			name = Release;
 		};
@@ -491,7 +464,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		419E088F1E203DEC004C502E /* Build configuration list for PBXProject "Temperature Converter" */ = {
+		419E088F1E203DEC004C502E /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419E08BA1E203DEC004C502E /* Debug */,
@@ -500,7 +473,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419E08BC1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature Converter" */ = {
+		419E08BC1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419E08BD1E203DEC004C502E /* Debug */,
@@ -509,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419E08BF1E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature ConverterTests" */ = {
+		419E08BF1E203DEC004C502E /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419E08C01E203DEC004C502E /* Debug */,
@@ -518,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		419E08C21E203DEC004C502E /* Build configuration list for PBXNativeTarget "Temperature ConverterUITests" */ = {
+		419E08C21E203DEC004C502E /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				419E08C31E203DEC004C502E /* Debug */,
