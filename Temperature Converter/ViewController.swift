@@ -1,4 +1,3 @@
-//
 //  ViewController.swift
 //
 //  Created by Ali Mazeh & Husein Dakroub on 1/6/17.
