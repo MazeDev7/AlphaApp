@@ -40,8 +40,8 @@ class ViewController: UIViewController {
     var textBoxValue = ""
     var zeroCheck = ""
     var isDecimal = false
-    var firstValue:Int64 = 0
-    var secondValue:Int64 = 0
+    var firstValue:Double = 0
+    var secondValue:Double = 0
     
 
     @IBOutlet weak var textBox: UITextField!
@@ -49,7 +49,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        textBox.text = "0"
     }
 
     override func didReceiveMemoryWarning() {
@@ -204,6 +203,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func percentButtonPressed(_ sender: Any) {
+        firstValue = Double(self.textBox.text!)!
+        firstValue /= 100
+        textBox.text = String(firstValue)
     }
     
     @IBAction func divButtonPressed(_ sender: Any) {
