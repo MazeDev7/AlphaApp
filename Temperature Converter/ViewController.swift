@@ -40,8 +40,14 @@ class ViewController: UIViewController {
     var textBoxValue = ""
     var zeroCheck = ""
     var isDecimal = false
+    var isDiv = false
+    var isAdd = false
+    var isSub = false
+    var isMult = false
+    var isRepeat = false
     var firstValue:Double = 0
     var secondValue:Double = 0
+    var result:Double = 0
     
 
     @IBOutlet weak var textBox: UITextField!
@@ -56,9 +62,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func equalButtonTapped(_ sender: Any) {
-    }
-    
     @IBAction func clearButtonTapped(_ sender: Any) {
         textBox.text = "0"
         textBoxValue = "0"
@@ -66,8 +69,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func zeroTapped(_ sender: Any) {
-        // get current value in text box
-        textBoxValue = self.textBox.text!
+        // check if user is tapping this number immediatly after tapping an operation
+        if isRepeat == true {
+            textBoxValue.removeAll()
+        }
+        else{
+            // get current value in text box
+            textBoxValue = self.textBox.text!
+        }
         // check to not allow multiple leading zeros
         if textBoxValue != "0" {
             // append the number one to the end of it
@@ -75,116 +84,174 @@ class ViewController: UIViewController {
             // set text box to new value
             textBox.text = textBoxValue
         }
+        // reset repitition value
+        isRepeat = false
     }
     
     @IBAction func oneTapped(_ sender: Any) {
-        
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
+        }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
         }
         
         textBoxValue += "1"
         textBox.text = textBoxValue
+        isRepeat = false
     }
 
     @IBAction func twoTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
         }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
+        }
+        
         
         textBoxValue += "2"
         textBox.text = textBoxValue
-        textBoxValue = ""
+        isRepeat = false
     }
     
     @IBAction func threeTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
+        }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
         }
         
         textBoxValue += "3"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func fourTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
+        }
+        else {
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
         }
         
         textBoxValue += "4"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func fiveTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
         }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
+        }
+        
         
         textBoxValue += "5"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func sixTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
         }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
+        }
+        
         
         textBoxValue += "6"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func sevenTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
         }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
+        }
+        
         
         textBoxValue += "7"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func eightTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
+        }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
         }
         
         textBoxValue += "8"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func nineTapped(_ sender: Any) {
-        textBoxValue = self.textBox.text!
-        zeroCheck = textBoxValue[0]
-        
-        if zeroCheck == "0" && isDecimal == false {
+        if isRepeat == true {
             textBoxValue.removeAll()
+        }
+        else{
+            textBoxValue = self.textBox.text!
+            zeroCheck = textBoxValue[0]
+            
+            if zeroCheck == "0" && isDecimal == false {
+                textBoxValue.removeAll()
+            }
         }
         
         textBoxValue += "9"
         textBox.text = textBoxValue
+        isRepeat = false
     }
     
     @IBAction func negButtonTapped(_ sender: Any) {
@@ -209,21 +276,59 @@ class ViewController: UIViewController {
     }
     
     @IBAction func divButtonPressed(_ sender: Any) {
+        firstValue = Double(self.textBox.text!)!
+        isDiv = true
+        isAdd = false
+        isMult = false
+        isSub = false
+        isRepeat = true
     }
     
     @IBAction func multButtonPressed(_ sender: Any) {
+        firstValue = Double(self.textBox.text!)!
+        isDiv = false
+        isAdd = false
+        isMult = true
+        isSub = false
+        isRepeat = true
     }
     
     @IBAction func subButtonTapped(_ sender: Any) {
+        firstValue = Double(self.textBox.text!)!
+        isDiv = false
+        isAdd = false
+        isMult = false
+        isSub = true
+        isRepeat = true
     }
     
     @IBAction func addButtonTapped(_ sender: Any) {
+        firstValue = Double(self.textBox.text!)!
+        isDiv = false
+        isAdd = true
+        isMult = false
+        isSub = false
+        isRepeat = true
     }
     
-    
-    
-    
-    
-    
+    @IBAction func equalButtonTapped(_ sender: Any) {
+        secondValue = Double(self.textBox.text!)!
+        
+        if isAdd == true {
+            result = firstValue + secondValue
+        }
+        if isSub == true {
+            result = firstValue - secondValue
+        }
+        if isDiv == true {
+            result = firstValue / secondValue
+        }
+        if isMult == true {
+            result = firstValue * secondValue
+        }
+        
+        textBox.text = String(result)
+        
+    }
 }
 
