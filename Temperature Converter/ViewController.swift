@@ -26,6 +26,10 @@ extension String {
         return self[Range(0 ..< max(0, to))]
     }
     
+    func insert(string:String,ind:Int) -> String {
+        return  String(self.characters.prefix(ind)) + string + String(self.characters.suffix(self.characters.count-ind))
+    }
+    
     subscript (r: Range<Int>) -> String {
         let range = Range(uncheckedBounds: (lower: max(0, min(length, r.lowerBound)), upper: min(length, max(0, r.upperBound))))
         
@@ -45,6 +49,7 @@ class ViewController: UIViewController {
     var isSub = false
     var isMult = false
     var isRepeat = false
+    var isNeg = false;
     var firstValue:Double = 0
     var secondValue:Double = 0
     var result:Double = 0
@@ -174,7 +179,6 @@ class ViewController: UIViewController {
             }
         }
         
-        
         textBoxValue += "5"
         textBox.text = textBoxValue
         isRepeat = false
@@ -193,7 +197,6 @@ class ViewController: UIViewController {
             }
         }
         
-        
         textBoxValue += "6"
         textBox.text = textBoxValue
         isRepeat = false
@@ -211,7 +214,6 @@ class ViewController: UIViewController {
                 textBoxValue.removeAll()
             }
         }
-        
         
         textBoxValue += "7"
         textBox.text = textBoxValue
@@ -255,6 +257,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func negButtonTapped(_ sender: Any) {
+        // function not really working at the moment
+        textBoxValue = self.textBox.text!
+        
+        if isNeg == false {
+            textBoxValue = textBoxValue.insert(string: "-", ind: 0)
+            isNeg = true
+        }
+        if isNeg == true {
+            textBoxValue = textBoxValue.replacingOccurrences(of: "-", with: "", options: NSString.CompareOptions.literal, range:nil)
+            isNeg = false
+        }
+        
+        textBox.text = textBoxValue
     }
     
     @IBAction func decimalButtonTapped(_ sender: Any) {
@@ -326,6 +341,12 @@ class ViewController: UIViewController {
         if isMult == true {
             result = firstValue * secondValue
         }
+        
+        isDiv = false
+        isAdd = false
+        isSub = false
+        isMult = false
+        isRepeat = true
         
         textBox.text = String(result)
         
