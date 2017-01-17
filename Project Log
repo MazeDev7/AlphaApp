@@ -1,0 +1,21 @@
+Bug Log
+--------
+#1  What's happening: second decimal appearing
+    Cause of bug: variables are of type double. Displays decimal after operation.
+    Execution of bug: 2+2 = 4.0 -> press decimal button
+    Fix: In progress
+    Priority: Medium
+    Status: Unsolved
+    
+#2  
+
+
+Feature Log
+------------
+#1  After operation execution, if you press the equal sign again it should perform the last operation entered.
+    Status: Not implemented
+    
+#2  Allow for multiple operations before pressing equal button.
+    Status: Not implemented
+   
+#3  
