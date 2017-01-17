@@ -7,7 +7,14 @@ Bug Log
     Priority: Medium
     Status: Unsolved
     
-#2  
+#2  What's happening: can not use two decimal numbers in a single operation
+    Cause of bug: bool value doesn't get reset after operation button
+    Execution of bug: 2.5 + 3.7 -> the .7 will not show up
+    Fix: In progress
+    Priority: Medium
+    Status: Unsolved
+    
+#3
 
 
 Feature Log
