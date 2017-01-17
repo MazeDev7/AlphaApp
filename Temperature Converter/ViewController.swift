@@ -257,14 +257,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func negButtonTapped(_ sender: Any) {
-        // function not really working at the moment
         textBoxValue = self.textBox.text!
         
         if isNeg == false {
             textBoxValue = textBoxValue.insert(string: "-", ind: 0)
             isNeg = true
         }
-        if isNeg == true {
+        else if isNeg == true {
             textBoxValue = textBoxValue.replacingOccurrences(of: "-", with: "", options: NSString.CompareOptions.literal, range:nil)
             isNeg = false
         }
